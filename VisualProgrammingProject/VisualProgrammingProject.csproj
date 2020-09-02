@@ -52,10 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +94,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Images\811+RMe2MDL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Images\imagesCAG5P2IF.jpg" />
+    <Content Include="Resources\Images\jpge50.jpg" />
+    <Content Include="Resources\Images\jpge50X.jpg" />
+    <Content Include="Resources\Images\jpgePeople.jpg" />
+    <Content Include="Resources\Images\jpgePeopleX.jpg" />
+    <Content Include="Resources\Images\jpgePhone.jpg" />
+    <Content Include="Resources\Images\jpgePhoneX.jpg" />
+    <Content Include="Resources\Images\Layout.png" />
+    <Content Include="Resources\Images\Picture0.png" />
+    <Content Include="Resources\Images\Picture01.png" />
+    <Content Include="Resources\Images\Picture1.png" />
+    <Content Include="Resources\Images\Picture10.png" />
+    <Content Include="Resources\Images\Picture11.png" />
+    <Content Include="Resources\Images\Picture12.png" />
+    <Content Include="Resources\Images\Picture13.png" />
+    <Content Include="Resources\Images\Picture14.png" />
+    <Content Include="Resources\Images\Picture15.png" />
+    <Content Include="Resources\Images\Picture2.png" />
+    <Content Include="Resources\Images\Picture3.png" />
+    <Content Include="Resources\Images\Picture4.png" />
+    <Content Include="Resources\Images\Picture5.png" />
+    <Content Include="Resources\Images\Picture6.png" />
+    <Content Include="Resources\Images\Picture7.png" />
+    <Content Include="Resources\Images\Picture8.png" />
+    <Content Include="Resources\Images\Picture9.png" />
+    <Content Include="Resources\Images\play-bttn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

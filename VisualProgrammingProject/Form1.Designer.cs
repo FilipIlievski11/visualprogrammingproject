@@ -28,35 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.playBttn = new System.Windows.Forms.Button();
+            this.inputName = new System.Windows.Forms.TextBox();
+            this.highScoresBttn = new System.Windows.Forms.Button();
+            this.exitBttn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nameRequiredError = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MillionaireLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MillionaireLogo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // playBttn
+            // 
+            this.playBttn.Location = new System.Drawing.Point(354, 420);
+            this.playBttn.Name = "playBttn";
+            this.playBttn.Size = new System.Drawing.Size(372, 37);
+            this.playBttn.TabIndex = 1;
+            this.playBttn.Text = "Play";
+            this.playBttn.UseVisualStyleBackColor = true;
+            this.playBttn.Click += new System.EventHandler(this.PlayBttn_Click);
+            // 
+            // inputName
+            // 
+            this.inputName.Location = new System.Drawing.Point(354, 354);
+            this.inputName.Name = "inputName";
+            this.inputName.Size = new System.Drawing.Size(372, 22);
+            this.inputName.TabIndex = 2;
+            this.inputName.Text = "Guest";
+            this.inputName.TextChanged += new System.EventHandler(this.InputName_TextChanged);
+            // 
+            // highScoresBttn
+            // 
+            this.highScoresBttn.Location = new System.Drawing.Point(354, 463);
+            this.highScoresBttn.Name = "highScoresBttn";
+            this.highScoresBttn.Size = new System.Drawing.Size(372, 37);
+            this.highScoresBttn.TabIndex = 3;
+            this.highScoresBttn.Text = "High Scores";
+            this.highScoresBttn.UseVisualStyleBackColor = true;
+            // 
+            // exitBttn
+            // 
+            this.exitBttn.Location = new System.Drawing.Point(354, 506);
+            this.exitBttn.Name = "exitBttn";
+            this.exitBttn.Size = new System.Drawing.Size(372, 32);
+            this.exitBttn.TabIndex = 4;
+            this.exitBttn.Text = "Exit";
+            this.exitBttn.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(351, 334);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Name:";
+            // 
+            // nameRequiredError
+            // 
+            this.nameRequiredError.AutoSize = true;
+            this.nameRequiredError.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.nameRequiredError.ForeColor = System.Drawing.Color.Red;
+            this.nameRequiredError.Location = new System.Drawing.Point(351, 379);
+            this.nameRequiredError.Name = "nameRequiredError";
+            this.nameRequiredError.Size = new System.Drawing.Size(102, 17);
+            this.nameRequiredError.TabIndex = 6;
+            this.nameRequiredError.Text = "Name required";
+            this.nameRequiredError.Visible = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(12, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1121, 670);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // MillionaireLogo
+            // 
+            this.MillionaireLogo.Image = global::VisualProgrammingProject.Properties.Resources.imagesCAG5P2IF;
+            this.MillionaireLogo.Location = new System.Drawing.Point(405, 93);
+            this.MillionaireLogo.Name = "MillionaireLogo";
+            this.MillionaireLogo.Size = new System.Drawing.Size(271, 181);
+            this.MillionaireLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MillionaireLogo.TabIndex = 23;
+            this.MillionaireLogo.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 669);
+            this.Controls.Add(this.MillionaireLogo);
+            this.Controls.Add(this.nameRequiredError);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.exitBttn);
+            this.Controls.Add(this.highScoresBttn);
+            this.Controls.Add(this.inputName);
+            this.Controls.Add(this.playBttn);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MillionaireLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button playBttn;
+        private System.Windows.Forms.TextBox inputName;
+        private System.Windows.Forms.Button highScoresBttn;
+        private System.Windows.Forms.Button exitBttn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nameRequiredError;
+        private System.Windows.Forms.PictureBox MillionaireLogo;
     }
 }
 
