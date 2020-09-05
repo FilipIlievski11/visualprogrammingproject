@@ -61,6 +61,24 @@ namespace VisualProgrammingProject.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream correct_answer {
+            get {
+                return ResourceManager.GetStream("correct_answer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream final_answer {
+            get {
+                return ResourceManager.GetStream("final_answer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap imagesCAG5P2IF {
@@ -137,6 +155,24 @@ namespace VisualProgrammingProject.Properties {
             get {
                 object obj = ResourceManager.GetObject("Layout", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream lets_play {
+            get {
+                return ResourceManager.GetStream("lets_play", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream main_theme {
+            get {
+                return ResourceManager.GetStream("main_theme", resourceCulture);
             }
         }
         
@@ -287,6 +323,42 @@ namespace VisualProgrammingProject.Properties {
             get {
                 object obj = ResourceManager.GetObject("Picture9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Questions&gt;
+        ///  &lt;Question&gt;
+        ///    &lt;QuestionText&gt; Kako se vikas?&lt;/QuestionText&gt;
+        ///    &lt;AnswerA&gt;Filip&lt;/AnswerA&gt;
+        ///    &lt;AnswerB&gt;Bojan&lt;/AnswerB&gt;
+        ///    &lt;AnswerC&gt;Martin&lt;/AnswerC&gt;
+        ///    &lt;AnswerD&gt;Mete&lt;/AnswerD&gt;
+        ///    &lt;RightAnswer&gt;A&lt;/RightAnswer&gt;
+        ///    &lt;Number&gt;1&lt;/Number&gt;
+        ///  &lt;/Question&gt;
+        ///  &lt;Question&gt;
+        ///    &lt;QuestionText&gt; Kako se vikas?&lt;/QuestionText&gt;
+        ///    &lt;AnswerA&gt;Filip&lt;/AnswerA&gt;
+        ///    &lt;AnswerB&gt;Bojan&lt;/AnswerB&gt;
+        ///    &lt;AnswerC&gt;Martin&lt;/AnswerC&gt;
+        ///    &lt;AnswerD&gt;Mete&lt;/AnswerD&gt;
+        ///    &lt;RightAnswer&gt;A&lt;/RightAnswer&gt;
+        ///    &lt;Number&gt;2&lt;/Number&gt;
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string questions {
+            get {
+                return ResourceManager.GetString("questions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream wrong_answer {
+            get {
+                return ResourceManager.GetStream("wrong_answer", resourceCulture);
             }
         }
     }
