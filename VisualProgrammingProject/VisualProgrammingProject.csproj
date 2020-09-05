@@ -58,10 +58,18 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="Helpers\ENumerators.cs" />
     <Compile Include="Helpers\LabelTextConstants.cs" />
     <Compile Include="Helpers\XMLHelper.cs" />
+    <Compile Include="HighScores.cs" />
+    <Compile Include="Model\HighScore.cs" />
     <Compile Include="Model\Question.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +111,7 @@
     <None Include="Resources\Images\811+RMe2MDL.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="readme.txt" />
     <Content Include="Resources\Images\imagesCAG5P2IF.jpg" />
     <Content Include="Resources\Images\jpge50.jpg" />
     <Content Include="Resources\Images\jpge50X.jpg" />

@@ -40,12 +40,6 @@ namespace VisualProgrammingProject
                 return false;
         }
 
-        public void getQuestionData()
-        {
-            string fileName = Properties.Resources.questions;
-            var CurrentDirectory = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            questions = Helpers.XMLHelper.ReadXml<Questions>(Path.Combine(CurrentDirectory, fileName)).Question;
-        }
 
 
         public int playerGetsHowMuchCash(bool gaveUp)
@@ -173,6 +167,13 @@ namespace VisualProgrammingProject
                     }
                 }
             }
+        }
+
+        public void getQuestionData()
+        {
+            string fileName = "questions.xml";
+            var CurrentDirectory = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            questions = Helpers.XMLHelper.ReadXml<Questions>(Path.Combine(CurrentDirectory, fileName)).Question;
         }
     }
 }

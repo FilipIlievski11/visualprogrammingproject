@@ -43,7 +43,7 @@
             // playBttn
             // 
             this.playBttn.Location = new System.Drawing.Point(346, 342);
-            this.playBttn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.playBttn.Margin = new System.Windows.Forms.Padding(2);
             this.playBttn.Name = "playBttn";
             this.playBttn.Size = new System.Drawing.Size(279, 30);
             this.playBttn.TabIndex = 1;
@@ -54,7 +54,7 @@
             // inputName
             // 
             this.inputName.Location = new System.Drawing.Point(346, 286);
-            this.inputName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inputName.Margin = new System.Windows.Forms.Padding(2);
             this.inputName.Name = "inputName";
             this.inputName.Size = new System.Drawing.Size(280, 20);
             this.inputName.TabIndex = 2;
@@ -64,17 +64,18 @@
             // highScoresBttn
             // 
             this.highScoresBttn.Location = new System.Drawing.Point(346, 376);
-            this.highScoresBttn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.highScoresBttn.Margin = new System.Windows.Forms.Padding(2);
             this.highScoresBttn.Name = "highScoresBttn";
             this.highScoresBttn.Size = new System.Drawing.Size(279, 30);
             this.highScoresBttn.TabIndex = 3;
             this.highScoresBttn.Text = "High Scores";
             this.highScoresBttn.UseVisualStyleBackColor = true;
+            this.highScoresBttn.Click += new System.EventHandler(this.HighScoresBttn_Click);
             // 
             // exitBttn
             // 
             this.exitBttn.Location = new System.Drawing.Point(346, 410);
-            this.exitBttn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitBttn.Margin = new System.Windows.Forms.Padding(2);
             this.exitBttn.Name = "exitBttn";
             this.exitBttn.Size = new System.Drawing.Size(279, 26);
             this.exitBttn.TabIndex = 4;
@@ -142,7 +143,7 @@
             this.Controls.Add(this.inputName);
             this.Controls.Add(this.playBttn);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

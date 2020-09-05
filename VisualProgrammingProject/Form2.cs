@@ -17,6 +17,7 @@ namespace VisualProgrammingProject
     public partial class Form2 : Form
     {
         public Form1 form1;
+        public HighScores highScores;
         public QuestionsQuestion currentQuestion;
         public Game Game;
         public Sounds sounds;
@@ -25,6 +26,7 @@ namespace VisualProgrammingProject
             sounds = new Sounds();
             sounds.playLetsStart();
             this.Game = new Game();
+            highScores = new HighScores();
             this.form1 = form1;
             InitializeComponent();
             getNewQuestion();
@@ -85,6 +87,7 @@ namespace VisualProgrammingProject
                             message = LabelTextConstants.YouWon + cash + LabelTextConstants.Dollar + LabelTextConstants.exclamationMark;
                             buttons = MessageBoxButtons.OK;
                             MessageBox.Show(message, title, buttons);
+                            highScores.saveScore(form1.PlayerName, cash);
                             form1.Show();
                             this.Hide();
                             this.Dispose();
@@ -96,6 +99,7 @@ namespace VisualProgrammingProject
                                 LabelTextConstants.exclamationMark + "\n" + LabelTextConstants.Millionaire;
                         buttons = MessageBoxButtons.OK;
                         MessageBox.Show(message, title, buttons);
+                        highScores.saveScore(form1.PlayerName, cash);
                         form1.Show();
                         this.Hide();
                         this.Dispose();
@@ -112,6 +116,7 @@ namespace VisualProgrammingProject
                     title = LabelTextConstants.WrongAnswer;
                     message = LabelTextConstants.YouWon + cash + LabelTextConstants.Dollar + LabelTextConstants.exclamationMark;
                     buttons = MessageBoxButtons.OK;
+                    highScores.saveScore(form1.PlayerName, cash);
                     MessageBox.Show(message, title, buttons);
                     form1.Show();
                     this.Hide();
@@ -156,6 +161,7 @@ namespace VisualProgrammingProject
             string message = LabelTextConstants.YouWon + cash + LabelTextConstants.Dollar + LabelTextConstants.exclamationMark;
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             MessageBox.Show(message, title, buttons);
+            highScores.saveScore(form1.PlayerName, cash);
             form1.Show();
             this.Hide();
             this.Dispose();

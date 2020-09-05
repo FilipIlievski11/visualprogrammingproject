@@ -32,6 +32,7 @@ namespace VisualProgrammingProject
             }
             else {
                 nameRequiredError.Visible = false;
+                PlayerName = inputName.Text;
                 this.Hide();
                 Form2 game = new Form2(this);
                 game.Show();
@@ -48,5 +49,11 @@ namespace VisualProgrammingProject
             this.Close();
         }
 
+        private void HighScoresBttn_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(this);
+            this.Hide();
+            form3.Show();
+        }
     }
 }
